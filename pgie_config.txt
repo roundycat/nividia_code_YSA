@@ -1,0 +1,26 @@
+[property]
+# 1. 기본 설정
+gpu-id=0
+net-scale-factor=0.0039215697906911373
+# 2. 모델 경로 (딥스트림 설치 시 기본으로 깔리는 파일들입니다)
+model-file=/opt/nvidia/deepstream/deepstream/samples/models/Primary_Detector/resnet10.caffemodel
+proto-file=/opt/nvidia/deepstream/deepstream/samples/models/Primary_Detector/resnet10.prototxt
+labelfile-path=/opt/nvidia/deepstream/deepstream/samples/models/Primary_Detector/labels.txt
+# 엔진 파일은 실행 시 자동 생성됩니다. (주석 처리하거나 경로 지정)
+# model-engine-file=model_b1_gpu0_int8.engine
+
+# 3. 추론 설정
+batch-size=1
+process-mode=1
+model-color-format=0
+network-mode=1
+num-detected-classes=4
+interval=0
+gie-unique-id=1
+output-blob-names=conv2d_bbox;conv2d_cov/Sigmoid
+
+# 4. 클래스 필터링 (우리는 사람만 필요함)
+[class-attrs-all]
+pre-cluster-threshold=0.2
+eps=0.2
+group-threshold=1
