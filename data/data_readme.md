@@ -55,8 +55,8 @@ SelfCali 데이터셋은 다음 두 가지 목적에 활용됩니다.
 ---
 
 ## 5. 파일 목록 예시
-SelfCali_C00.mat
-SelfCali_C01.mat
-SelfCali_C02.mat
-…
-SelfCali_C10.mat
+SelfCali_C00.mat  
+SelfCali_C01.mat  
+SelfCali_C02.mat  
+…  
+SelfCali_C10.mat  
