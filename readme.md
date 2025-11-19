@@ -103,9 +103,3 @@ self.img_size = 36              # 입력 이미지 크기 (TS-CAN 기본값: 36)
 **Q3. 속도가 너무 느려요.**
 * `2_inference.py`에서 `onnxruntime`이 GPU(`CUDAExecutionProvider`)를 사용하고 있는지 확인하세요.
 * `jetson_stats`(`jtop`)를 켜서 GPU 점유율을 확인해 보세요.
-
----
-
-## 📜 Reference
-* **Original Code:** [ubicomplab/deep-rppg-android](https://github.com/ubicomplab/deep-rppg-android)
-* **Paper:** DeepPhys / TS-CAN (NeurIPS)
